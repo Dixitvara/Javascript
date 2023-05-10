@@ -35,7 +35,7 @@ body{
     color: #c9db5a;
 }
 
-#start{
+#start, #next, #tryAgain{
     width: 6vw;
     height: 6vh;
     margin: 40px;
@@ -43,4 +43,36 @@ body{
     border-radius: 5px;
     color: #c9db5a;
     font-size: 18px;
+}
+
+/* home.html */
+.para{
+    color:#c9db5a;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.home-container{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* chart.html */
+img{
+    height: 100vh;
+}
+
+.chart-container{
+    display :flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* final.html */
+#ans{
+    height: 40px;
+    width: 40px;
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/charts/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mind reader app</title>
+</head>
+
+<body>
+    <div class="chart-container">
+        <img src="charts/globedesign.png" alt="" id="globe">
+        <img src="" id="ans" alt="hi">
+        <div>
+            <p class="para">Touch on globe</p>
+            <button name="tryAgain" id="tryAgain">Try again!</button>
+        </div>
+    </div>
+</body>
+<script>
+
+    icon = ["/icons/apple.png", "/icons/mouse.png", "/icons/wifi.png", "/icons/github.png", "/icons/android.png", "/icons/bluetooth.png", "/icons/code.png", "/icons/google.png", "/icons/js.png", "/icons/insta.png", "/icons/java.png", "/icons/keybrd.png", "/icons/msg.png", "/icons/linkdin.png", "/icons/pin.png", "/icons/portal.png", "/icons/processor.png", "/icons/python.png", "/icons/react.png", "/icons/spotify.png"]
+
+    const randomNum = sessionStorage.getItem("randimg")
+    document.getElementById('ans').src = icon[randomNum]
+</script>
+
+</html>

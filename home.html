@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/charts/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mind reader app</title>
+</head>
+
+<body>
+    <div class="home-container">
+        <p class="para">1 . Choose any two digit number. Example: let's choose 43</p>
+        <p class="para">2 . Add both digit together. Example: 4 + 3 = 7 </p>
+        <p class="para">3 . Substract the total from the original number. Example: 43 - 7 = 36</p>
+        <div><button name="next" id="next">Next</button></div>
+    </div>
+</body>
+<script>
+    const next = document.getElementById('next')
+
+    next.onclick = function nPage() {
+        location.replace('chart.html')
+    }
+</script>
+
+</html>

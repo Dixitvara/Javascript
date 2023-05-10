@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/charts/icon.png">
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/app.js" defer></script>
+
 </head>
 
 <body>
@@ -22,4 +22,12 @@
         <div><button name="submit" id="start">Start</button></div>
     </div>
 </body>
+<script>
+    const start = document.getElementById('start')
+
+    start.onclick = function nextPage() {
+        location.replace('home.html')
+    }
+</script>
+
 </html>

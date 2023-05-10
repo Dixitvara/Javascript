@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/charts/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mind reader app</title>
+</head>
+
+<body>
+    <div class="chart-container">
+        <img src="" alt="" id="img">
+        <div>
+            <p class="para">Check symbol of your answer</p>
+            <button name="next" id="next">Next</button>
+        </div>
+    </div>
+</body>
+<script>
+    const next = document.getElementById('next')
+
+    next.onclick = function nPage() {
+        location.replace('final.html')
+    }
+</script>
+<script>
+
+    charts = ["/charts/apple.png", "/charts/mouse.png", "/charts/wifi.png", "/charts/github.png", "/charts/android.png", "/charts/bluetooth.png", "/charts/code.png", "/charts/google.png", "/charts/js.png", "/charts/insta.png", "/charts/java.png", "/charts/keybrd.png", "/charts/msg.png", "/charts/linkdin.png", "/charts/pin.png", "/charts/portal.png", "/charts/processor.png", "/charts/python.png", "/charts/react.png", "/charts/spotify.png"]
+
+    const randomNum = (Math.floor(Math.random() * 20))
+    sessionStorage.setItem("randimg",randomNum)
+    document.getElementById('img').src = charts[randomNum]
+
+</script>
+
+</html>
